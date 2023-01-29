@@ -1,14 +1,17 @@
-default: taschenrechner
+CC = gcc
+CFLAGS = -c -Wall
+HEADER = rechnenarten.h
+OBJECTS = taschenrechenr.o rechenarten.o
+TARGET = taschenrechner
 
-taschenrechener.o: taschenrechner.c taschenrechner.h
-  gcc -c taschenrechner.c -o taschenrechner.o
+default: $(TARGET)
 
-rechenarten.o: rechenarten.c rechenarten.h
-  gcc -c rechenarten.c -o rechenarten.o
- 
- 
-taschenrechner: taschenrechner.o rechenarten.o
-  gcc taschenrechner.o rechenarten.o
-  
-clean:
-  -rm -f *.o
+%.o: %.c $(HEADER)
+	$(CC) $(CFLAGS) $<
+
+$(TARGET): $(OBJECTS) 
+	$(CC) $(OBJECTS) -o $(TARGET)
+
+clean: 
+	-rm -f $(OBJECTS)
+	-rm -f $(TARGET)
