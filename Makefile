@@ -1,7 +1,7 @@
 CC = gcc
 CFLAGS = -c -Wall
 HEADER = rechnenarten.h
-OBJECTS = taschenrechenr.o rechenarten.o
+OBJECTS = taschenrechner.o rechenarten.o
 TARGET = taschenrechner
 
 default: $(TARGET)
