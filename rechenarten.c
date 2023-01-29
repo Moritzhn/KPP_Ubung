@@ -1,17 +1,17 @@
-include<stdio.h>
+#include<stdio.h>
 
 float summe(eins, zwei){
 return eins + zwei;
 }
 
-float prdukt(eins, zwei){
+float produkt(eins, zwei){
 return eins * zwei;
 }
 
-float differenz{
+float differenz(eins, zwei){
 return eins - zwei;
 }
 
-float qoutient{
+float qoutient(eins, zwei){
 return eins / zwei;
 }
