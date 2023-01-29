@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include<rechenarten.h>
+#include "rechenarten.h"
 
 int main(){
 	
