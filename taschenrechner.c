@@ -12,6 +12,6 @@ int main(){
 	printf("Die Summe der Zahlen lautet: %f \n", summe(eins, zwei));
 	printf("Das Produkt der Zahlen lautet: %f \n", produkt(eins, zwei));
 	printf("Die Differenz der Zahlen lautet: %f \n", differenz(eins, zwei));
-	printf("Der Qoutient der Zahlen lautet: %f \n", qountient(eins, zwei));
+	printf("Der Qoutient der Zahlen lautet: %f \n", qoutient(eins, zwei));
 return 0;	
 }
